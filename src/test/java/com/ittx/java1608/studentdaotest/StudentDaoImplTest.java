@@ -1,4 +1,4 @@
-package com.ittx.java1608.usermanager.dao.impl;
+package com.ittx.java1608.studentdaotest;
 
 import java.util.List;
 
@@ -7,22 +7,22 @@ import org.junit.Test;
 import org.springframework.context.ApplicationContext;
 import org.springframework.context.support.ClassPathXmlApplicationContext;
 
-import com.ittx.java1608.usermanager.dao.UserDao;
-import com.ittx.java1608.usermanager.model.User;
+import com.ittx.java1608.studentmanager.dao.StudentDao;
+import com.ittx.java1608.studentmanager.model.Student;
 
-public class UserDaoImplTest {
-	private UserDao userDao;
+public class StudentDaoImplTest {
+	private StudentDao studentDao;
 	@Before
 	public void setUp() throws Exception {
 		ApplicationContext context = new ClassPathXmlApplicationContext(new String[]{"spring-core.xml"});
-		userDao = context.getBean(UserDao.class);
+		studentDao = context.getBean(StudentDao.class);
 	}
 
 	@Test
 	public void testGetAllUser() {
-		List<User> userLists = userDao.getAllUser();
-		for(User user: userLists){
-			System.out.println(user);
+		List<Student> userLists = studentDao.getAllUser();
+		for(Student student: userLists){
+			System.out.println(student);
 		}
 	}
 

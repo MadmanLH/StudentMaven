@@ -16,7 +16,7 @@
 		<property name="password" value="${jdbc.password}" />
 	</bean>
 	
-	<bean id="userDao" class="com.ittx.java1608.usermanager.dao.impl.UserDaoImpl">
+	<bean id="studentDao" class="com.ittx.java1608.usermanager.dao.impl.StudentDaoImpl">
 		<property name="dataSource">
 			<ref bean="dataSource"/>
 		</property>
