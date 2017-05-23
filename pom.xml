@@ -3,11 +3,11 @@
 	<modelVersion>4.0.0</modelVersion>
 
 	<groupId>com.ittx.java1608</groupId>
-	<artifactId>java1608-usermanager</artifactId>
+	<artifactId>java1608-studentmanager</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
 	<packaging>jar</packaging>
 
-	<name>java1608-usermanager</name>
+	<name>java1608-studentmanager</name>
 	<url>http://maven.apache.org</url>
 
 	<properties>
